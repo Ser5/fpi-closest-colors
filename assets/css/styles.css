@@ -1,0 +1,56 @@
+*, ::before, ::after {box-sizing:border-box;}
+
+body {padding-top:5px; background:#eee; font-family:Arial; font-size:16px; color:#333; line-height:135%;}
+
+table {width:100%;}
+th, td {padding:20px 10px; border:1px solid #333; text-align:left; vertical-align:top;}
+th     {font-weight:bold;}
+
+b {font-weight:bold;}
+
+a       {color:rgb(69, 78, 107);}
+a       {text-decoration:underline;}
+a:hover {text-decoration:none;}
+
+p:not(:last-child) {margin-bottom:0.5em;}
+
+
+
+.container {padding:0 10px;}
+.section {margin-bottom:20px;}
+
+.clickable {transition:all 0.2s; cursor:pointer;}
+.clickable:hover {background:#aaa; color:black;}
+
+.color-column {width:30%;}
+
+.favorite-column      {max-width:70px; text-align:center;}
+.favorite-cell        {font-size:30px; color:#aaa; cursor:pointer; transition:all 0.2s}
+.favorite-cell.active {color:orange;}
+
+.color-cell {padding:5px 10px; cursor:pointer;}
+.color {height:50px; border-radius:5px;}
+
+
+
+.md {display:none;}
+.sm {display:none;}
+
+@media (max-width: 767px) {
+	.lg {display:none;}
+	.md {display:initial;}
+	.sm {display:none;}
+}
+
+@media (max-width: 475px) {
+	body {font-size:14px;}
+	th, td {padding:20px 5px;}
+
+	.popularity-column {max-width:min-content;}
+	.favorite-column   {width:40px; max-width:40px; padding-left:0; padding-right:0;}
+	.color-cell        {padding:5px;}
+
+	.lg {display:none;}
+	.md {display:none;}
+	.sm {display:initial;}
+}
